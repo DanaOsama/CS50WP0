@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Stylesheet link -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- The scss stylesheet-->
+  <link rel="stylesheet" href="styles1.css">
+
+  <!-- link for a fancier font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Acme|Farro&display=swap" rel="stylesheet">
+
+  <title>Home | Welcome</title>
+
+</head>
+
+<body>
+  <!-- This is the parent container -->
+  <div class="parentContainer">
+
+    <!-- Add navigation bar -->
+    <!-- We will create an expandable, drop-down navigation bar for smaller sceens. -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <!-- We will create a container to keep the bar items centered -->
+      <div class="container">
+
+        <!-- Add the toggle button for small screen sizes. Collapse attribute identifies the behavior of the button.
+            The data-target describes what we want to collapse or display -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main">
+
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+
+          <!-- The nav within the nav-bar -->
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Home</a>
+            <a class="nav-item nav-link " href="placesToVisit.html">Places to Visit</a>
+            <a class="nav-item nav-link" href="planYourStay.html">Plan Your Stay</a>
+            <a class="nav-item nav-link" href="contactUs.html">Contact Us</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!-- Jumbotron on top -->
+    <div class="jumbotron jumbotron-fluid JumboHeaderImgHome ">
+      <div class="container">
+        <h2 class="display-1"> Welcome to Egypt!</h2>
+        <p class="lead" id=intro>Get to know the magical land of the Pharaos!</p>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm ">
+          <h3>Why Egypt?</h3>
+          <p class="text-justify font-italic">Egypt is not a country we live in but a country that lives within us
+            -Pope Shenouda III</p>
+          <p class="text-justify">Between the dunes of the desert and the waves of the ocean, one of the most popular
+            civilizations thrived by the Nile River. Although they don't live now, their tombs and temples remain some
+            of the most magnificent attractions to humanity today. Mysterious and majestic, those monumnets are
+            scattered all around Egypt, calling to those who would like to delve into the pages of the past. However,
+            Egypt isn't just about the Pharaos. There are so many things that you can see in Egypt like the Nile River,
+            the Citadel of Cairo, Khan el-Khalili, Bibliotheca Alexandrina, and even the beautiful Coral Reef of the Red
+            Sea! Explore more places in our 'Places to Visit' tab! </p>
+        </div>
+        <!-- Picture with caption-->
+        <div class="col-sm">
+          <img src="images/pic2.jpg" class="img-fluid img-thumbnail images">
+          <div class="caption center-block font-italic">Khan el-Khalili Bazaar</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <h3 class="m-2">This is Egypt! Meet the People!</h3>
+    </div>
+    <div class="container-fluid bg-light p-3">
+      <!-- Video about Egypt -->
+      <div class="container">
+        <div class="embed-responsive embed-responsive-16by9 m-3">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jCdoHRR4JB8" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+    </div>
+    <!--Banner at the bottom of the page-->
+    <div class="container-fluid pageBottom "><small>All rights reserved © 2019</small> </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

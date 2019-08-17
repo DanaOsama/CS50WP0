@@ -1,0 +1,110 @@
+/*Variables*/
+$font-big:'Acme', sans-serif;
+$font-small:'Farro', sans-serif;
+
+/*Nesting*/
+div
+{
+    h2 
+    {
+            text-decoration: underline;
+    }
+}
+
+/*Inheritance*/
+%jumboHeader
+{
+    background-size: cover;
+}
+
+.parentContainer
+{
+    max-width:1200 px;
+    margin: 0 auto;
+    padding:0px;
+}
+
+
+h2, #intro
+{
+    font-size-adjust: auto;
+    font-weight: 400;
+    color: white;
+}
+h2 
+{
+    font-family: $font-big;
+}
+
+/*The small line in jumbotron*/
+#intro
+{
+    font-family: $font-small;
+}
+
+h3
+{
+    font-family: $font-big;
+}
+
+h5
+{
+    color: rgb(51, 49, 49);
+    font-family: $font-big;
+}
+
+
+p
+{
+    font-family: $font-small;
+}
+/*The all rights reserved line*/
+.pageBottom
+{
+    background-color: #343a40;
+    color: lightgrey;
+    text-align: center;
+}
+.JumboHeaderImgHome
+{
+    @extend %jumboHeader;
+    background-image: url(images/bannerA.jpg);
+}
+.JumboHeaderImgPlaces
+{
+    @extend %jumboHeader;
+    background-image: url(images/wadi.jpg);
+}
+.JumboHeaderImgPlan
+{
+    @extend %jumboHeader;
+    background-image: url(images/fanoos1.5.jpg);
+}
+.JumboHeaderImgContact
+{
+    @extend %jumboHeader;
+    background-image: url(images/72.jpg);
+}
+/*For all pictures*/
+.images
+{
+    object-fit: cover;
+}
+/*Describes the text in the Contact Us page at the bottom*/
+.addressContact
+{
+    font-size: smaller;
+}
+
+/*Adds an arrow on the active tab in the navigation bar
+ - pseudo- element select*/
+.active::before
+{
+    content:"\21d2";
+}
+
+@media print 
+{.no-print {
+    display:none;
+    }
+}

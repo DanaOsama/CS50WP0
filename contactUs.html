@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- The scss stylesheet-->
+    <link rel="stylesheet" href="styles1.css">
+
+    <!-- link for a fancier font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Acme|Farro&display=swap" rel="stylesheet">
+
+    <title>Contact Us</title>
+
+</head>
+
+<body>
+    <!-- Parent Container -->
+    <div class="parentContainer">
+
+        <!-- Add navigation bar - change the active link -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#main">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="main">
+
+                    <!-- The nav within the nav-bar -->
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link home" href="index.html">Home</a>
+                        <a class="nav-item nav-link " href="placesToVisit.html">Places to Visit</a>
+                        <a class="nav-item nav-link" href="planYourStay.html">Plan Your Stay</a>
+                        <a class="nav-item nav-link active" href="contactUs.html">Contact Us</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!--Jumbotron-->
+        <div class="jumbotron jumbotron-fluid JumboHeaderImgContact">
+
+            <div class="container">
+                <h2 class="display-1">Contact Us</h2>
+                <p class="lead" id=intro>Leave us a message!</p>
+            </div>
+
+        </div>
+        <!--Short message before the form-->
+        <div class="container">
+            <h3 class="text-justify">Write to us about your experience (whether with one of our packages or just the
+                website). What can we improve? Your comments are always appreciated!</h3>
+        </div>
+
+        <!--THE FORM Inside a Grid-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <!--The class no-print won't allow the form to be printed-->
+                    <form class="no-print">
+                        <!--The name field-->
+                        <div class="form-group">
+                            <label for="nameContact">Full Name</label>
+                            <input type="text" class="form-control" id="nameContact" placeholder="Ramses the Second">
+                        </div>
+
+                        <!--The email field-->
+                        <div class="form-group">
+                            <label for="emailContact">Email address</label>
+                            <input type="email" class="form-control" id="emailContact" aria-describedby="emailHelp"
+                                placeholder="ramses@pharaos.eg">
+                        </div>
+
+                        <!--The message field-->
+                        <div class="form-group">
+                            <label for="messageContact">Message</label>
+                            <textarea class="form-control" id="messageContact" rows="3"
+                                placeholder="Tell us what you think!"></textarea>
+                        </div>
+
+                        <!--Another absolutely normal submit button -->
+                        <button type="submit" class="btn bg-dark text-white m-3">Submit</button>
+                    </form>
+
+                </div>
+                <div class="col-sm">
+                    <img src="images/hieroglyphics-wall.jpg" class="img-fluid img-thumbnail images">
+                    <div class="caption center-block font-italic">Hieroglyphics - the pictorial writing system used by
+                        ancient Egyptians.</div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Banner at the bottom of the page that includes contact information-->
+        <div class="container-fluid p-3 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h5>Reach us here</h5>
+                        <p class="text-muted addressContact"><strong>Email</strong></p>
+                        <p class="text-muted addressContact">ramses@pharaos.eg</p>
+                        <p class="text-muted addressContact"><strong>Telephone</strong></p>
+                        <p class="text-muted addressContact">012345xxxxx</p>
+                    </div>
+
+                    <div class="col-sm">
+                        <p class="text-muted addressContact"><strong>Address</strong></p>
+                        <p class="text-muted addressContact">2xx Street</p>
+                        <p class="text-muted addressContact">City of Cities, Cairo</p>
+                        <p class="text-muted addressContact">Egypt</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pageBottom"><small>All rights reserved © 2019</small> </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
